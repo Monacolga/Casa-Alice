@@ -8,13 +8,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <title>Casa Alice</title>
   </head>
   <body>
     <header>
-      <div class="container header-container">
+      <div class="wrapper header-wrapper">
+        <div class="header-logo">
+          <img class="logo" src="./logo/logo52.svg" alt="logo" />
+        </div>
         <nav class="nav">
           <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#wifi" class="nav-link">Wi-Fi</a>
+            </li>
             <li class="nav-item">
               <a href="#restorants" class="nav-link">Restorants</a>
             </li>
@@ -24,113 +31,138 @@
             <li class="nav-item">
               <a href="#shops" class="nav-link">Shops</a>
             </li>
-            <li class="nav-item">
-              <a href="#pastries" class="nav-link">Pastries & ice cream</a>
-            </li>
           </ul>
         </nav>
+        <div class="header_burger">
+          <span class="burger-line"></span>
+        </div>
+        <div class="burger-menu_overlay"></div>
       </div>
     </header>
     <main>
-      <div class="container">
-        <h2>Useful numbers</h2>
-        <ul>
-          <li>
-            Main contact
-            <a class="phone" href="https://wa.me/39379271767"
-              >Olga: +39 379 271 76 67 (WhatsApp)</a
-            >
-          </li>
-          <li>
-            <a class="phone" href="tel:&nbsp;+39379271767"
-              >Taxi: Salvatore&nbsp;+39 360 975 281</a
-            >
-          </li>
-          <li>
-            <a class="phone" href="tel:&nbsp;118">Emergency:&nbsp;118</a>
-          </li>
-          <li>
-            <a class="phone" href="tel:&nbsp;+390942611111"
-              >Police:&nbsp;+39 0942 611111</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="container">
-        <h2>Garbage</h2>
-        <p>
-          Most of them can be closed Sundays and observe lunch break (usually
-          between 13h and 16h)
-        </p>
-        <ul>
-          <li>Monday</li>
-          <li>Tuesday</li>
-          <li>Wednesday</li>
-          <li>Thursday</li>
-          <li>Friday</li>
-          <li>Saturday</li>
-        </ul>
-      </div>
-      <div class="container">
-        <h2>Shops</h2>
-        <div>
-          <h3>Supermarkets</h3>
-          <div>
-            <h4>Giardini</h4>
-          </div>
-          <div>
-            <h4>Taormina</h4>
-          </div>
+      <div class="wrapper main-wrapper">
+        <div class="container numbers-container">
+          <h2 class="numbers-title">Useful numbers</h2>
+          <ul>
+            <li>
+              <a class="phone" href="https://wa.me/39379271767"
+                >Main contact: Olga +39 379 271 76 67</a
+              >
+            </li>
+            <li>
+              <a class="phone" href="https://wa.me/39379271767"
+                >Taxi: Salvatore&nbsp;+39 360 975 281</a
+              >
+            </li>
+            <li>
+              <a class="phone phone-emer" href="tel:&nbsp;118"
+                >Emergency:&nbsp;118</a
+              >
+            </li>
+            <li>
+              <a class="phone phone-emer" href="tel:&nbsp;+390942611111"
+                >Police:&nbsp;+39 0942 611111</a
+              >
+            </li>
+          </ul>
         </div>
-        <div>
-          <h3>Bars & caffè</h3>
-          <div>
-            <h4>Giardini</h4>
-          </div>
-          <div>
-            <h4>Taormina</h4>
-          </div>
+        <div class="container">
+          <h2>Garbage</h2>
+          <p class="garbage-text">
+            Selective recycling is applied; appropriate garbage is to be left in
+            front of the main entrance of the building the evening before, after
+            20h.
+          </p>
+          <p class="garbage-text">
+            <span>!!!</span> Organic (wet) waste must be placed outside with the
+            bin.
+          </p>
+          <ul class="garbage-list">
+            <li class="garbage-item">
+              <span>Monday</span> - organic (wet) waste
+            </li>
+            <li class="garbage-item">
+              <span>Tuesday</span> - indifferentiated (dry)
+            </li>
+            <li class="garbage-item">
+              <span>Wednesday</span> - organic (wet) waste & glass (separately)
+            </li>
+            <li class="garbage-item">
+              <span>Thursday</span> - plastic & aluminium
+            </li>
+            <li class="garbage-item">
+              <span>Friday</span> - organic (wet) waste
+            </li>
+            <li class="garbage-item">
+              <span>Saturday</span> - paper and cardboard
+            </li>
+          </ul>
         </div>
-        <div>
-          <h3>Fish</h3>
+        <div class="container">
+          <h2>Shops</h2>
+          <p>
+            Most of them can be closed Sundays and observe lunch break (usually
+            between 13h and 16h)
+          </p>
           <div>
-            <h4>Giardini</h4>
+            <h3>Supermarkets</h3>
+            <div>
+              <h4>Giardini</h4>
+            </div>
+            <div>
+              <h4>Taormina</h4>
+            </div>
           </div>
           <div>
-            <h4>Taormina</h4>
-          </div>
-        </div>
-        <div>
-          <h3>Meat</h3>
-          <div>
-            <h4>Giardini</h4>
-          </div>
-          <div>
-            <h4>Taormina</h4>
-          </div>
-        </div>
-        <div>
-          <h3>Bread</h3>
-          <div>
-            <h4>Giardini</h4>
+            <h3>Bars & caffè</h3>
+            <div>
+              <h4>Giardini</h4>
+            </div>
+            <div>
+              <h4>Taormina</h4>
+            </div>
           </div>
           <div>
-            <h4>Taormina</h4>
+            <h3>Fish</h3>
+            <div>
+              <h4>Giardini</h4>
+            </div>
+            <div>
+              <h4>Taormina</h4>
+            </div>
           </div>
-        </div>
-        <div>
-          <h3>Pastries & ice-cream</h3>
           <div>
-            <h4>Giardini</h4>
+            <h3>Meat</h3>
+            <div>
+              <h4>Giardini</h4>
+            </div>
+            <div>
+              <h4>Taormina</h4>
+            </div>
           </div>
           <div>
-            <h4>Taormina</h4>
+            <h3>Bread</h3>
+            <div>
+              <h4>Giardini</h4>
+            </div>
+            <div>
+              <h4>Taormina</h4>
+            </div>
+          </div>
+          <div>
+            <h3>Pastries & ice-cream</h3>
+            <div>
+              <h4>Giardini</h4>
+            </div>
+            <div>
+              <h4>Taormina</h4>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="wrapper footer-wrapper">
         <div>
           <h2>Wi-Fi</h2>
           <span>Network: CasaAlice</span>
