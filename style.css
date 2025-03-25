@@ -35,7 +35,7 @@ a {
 
 h2 {
   font-size: 28px;
-  padding: 0 30px 20px;
+  padding: 0 30px 10px;
   color: rgb(75, 83, 66);
 }
 
@@ -53,14 +53,14 @@ button {
 .wrapper {
   max-width: 550px;
   margin: auto;
-  padding: 30px 45px;
+  padding: 30px 25px;
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px;
+  padding: 0 25px;
   position: relative;
   background-color: rgb(107, 123, 88);
   z-index: 1;
@@ -127,7 +127,7 @@ button {
   display: inline-block;
   width: 55px;
   height: 30px;
-  margin: 0 30px;
+  margin: 0 20px;
   cursor: pointer;
   transition: all 0.2s ease-in;
 }
@@ -152,7 +152,7 @@ button {
 }
 
 .container {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   text-align: left;
 }
 
@@ -190,6 +190,30 @@ button {
 .garbage-item span {
   color: rgb(75, 83, 66);
   font-size: 21px;
+}
+
+.garbage-list {
+  margin-bottom: 15px;
+}
+
+.garbage-text.last {
+  color: rgb(75, 83, 66);
+}
+
+.map-link {
+  position: relative;
+  padding: 0 20px 10px;
+}
+
+.map-link:before {
+  content: "";
+  width: 15px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  background: url(./logo/loc.svg) no-repeat center / cover;
 }
 
 .footer-wrapper {
