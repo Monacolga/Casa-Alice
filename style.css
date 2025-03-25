@@ -42,8 +42,8 @@ h2 {
 
 h3 {
   font-size: 24px;
-  text-align: left;
-  padding-left: 40px;
+  text-align: center;
+  /* padding-left: 40px; */
   color: rgb(75, 83, 66);
 }
 
@@ -51,7 +51,7 @@ h4 {
   font-size: 20px;
   text-align: left;
   padding: 0 0 10px 20px;
-  color: rgb(75, 83, 66);
+  color: rgb(117, 141, 90);
 }
 
 ul {
@@ -196,7 +196,8 @@ button {
   border: 2px solid #b49e60;
   border-radius: 50px;
   background-color: #ead9ad;
-  padding: 0 15px;
+  width: 80px;
+  height: 35px;
   cursor: pointer;
 }
 
@@ -225,6 +226,14 @@ button {
 
 .garbage-text.last {
   color: rgb(75, 83, 66);
+}
+
+/* .giar {
+  background-color: #edf2ec;
+} */
+
+.bus-text {
+  padding-bottom: 10px;
 }
 
 .map-link {
