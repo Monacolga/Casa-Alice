@@ -84,7 +84,7 @@ button {
 .nav {
   display: block;
   position: fixed;
-  top: 130px;
+  top: 115px;
   right: 0;
   width: 100%;
   height: 100%;
@@ -99,14 +99,14 @@ button {
   /* display: none; */
   display: block;
   width: 100%;
-  text-align: center;
-  padding: 40px 40px;
+  text-align: right;
+  padding: 0 45px;
 }
 
 .nav-item {
   /* position: relative; */
   width: 100%;
-  margin: 0 0 40px;
+  margin: 0 0 10px;
 }
 
 .nav-link {
@@ -254,5 +254,17 @@ button {
 }
 
 .footer-wrapper {
+  padding: 3px 25px 10px;
+  color: #ead9ad;
   background-color: rgb(107, 123, 88);
+}
+
+.wifi span {
+  color: rgb(253, 248, 242);
+}
+
+.wifi-title {
+  font-weight: normal;
+  color: #ead9ad;
+  padding: 0;
 }
