@@ -20,6 +20,10 @@ body {
   color: #161616;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -91,8 +95,13 @@ button {
   min-width: auto;
   background-color: rgb(107, 123, 88);
   transform: translateX(100%);
-  transition: 0.3s alllinear;
+  transition: 0.5s all;
   z-index: 4;
+}
+
+.nav.active {
+  transform: translateX(0);
+  transition: 0.5s all linear;
 }
 
 .nav-list {
@@ -126,8 +135,8 @@ button {
 }
 
 .burger-line,
-.header_burger:after,
-.header_burger:before {
+.header-burger:after,
+.header-burger:before {
   position: absolute;
   display: inline-block;
   /* display: none; */
@@ -137,27 +146,45 @@ button {
   background-color: #ead9ad;
 }
 
-.header_burger {
+.header-burger {
   position: relative;
   display: inline-block;
   width: 55px;
   height: 30px;
   margin: 0 20px;
   cursor: pointer;
-  transition: all 0.2s ease-in;
+  transition: all 0.5s ease-in;
 }
-.header_burger:before {
+.header-burger:before {
   top: -2px;
   right: 0;
+  transition: all 0.5s ease-in;
 }
-.header_burger:after {
+
+.header-burger:after {
   bottom: 0;
   right: 0;
+  transition: all 0.5s ease-in;
 }
 
 .burger-line {
   top: calc(50% - 2px);
   right: 0;
+}
+
+.header-burger.active .burger-line {
+  display: none;
+}
+
+.header-burger.active:before {
+  top: 20px;
+  transform: rotate(45deg) translate(-2px, -50%);
+}
+
+.header-burger.active:after {
+  top: 17px;
+  right: -1px;
+  transform: rotate(-45deg) translate(-2px, -50%);
 }
 
 /*************burger fine************/
@@ -234,6 +261,7 @@ button {
 
 .bus-text {
   padding-bottom: 10px;
+  list-style-type: disc;
 }
 
 .map-link {
