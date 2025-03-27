@@ -115,21 +115,24 @@ button {
 
 .nav-list {
   /* display: none; */
+  font-size: 22px;
   display: block;
   width: 100%;
-  text-align: right;
   padding: 0 45px;
+  text-align: right;
+  color: #ead9ad;
 }
 
 .nav-item {
   /* position: relative; */
-  width: 100%;
+  max-width: 550px;
   margin: 0 0 10px;
+  text-align: right;
 }
 
 .nav-link {
-  font-size: 24px;
-  color: #ead9ad;
+  font-size: 18px;
+  color: #f9eccb;
 }
 
 /*************burger start************/
@@ -248,6 +251,16 @@ button {
   background: url(./logo/phone.svg) no-repeat center / cover;
 }
 
+.wifi span {
+  color: rgb(107, 123, 88);
+}
+
+.wifi-title {
+  font-weight: normal;
+  color: rgb(107, 123, 88);
+  padding: 0;
+}
+
 .garbage-text {
   margin-bottom: 20px;
   text-align: justify;
@@ -291,14 +304,4 @@ button {
   padding: 3px 25px 10px;
   color: #ead9ad;
   background-color: rgb(107, 123, 88);
-}
-
-.wifi span {
-  color: rgb(253, 248, 242);
-}
-
-.wifi-title {
-  font-weight: normal;
-  color: #ead9ad;
-  padding: 0;
 }
