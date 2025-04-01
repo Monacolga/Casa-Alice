@@ -33,8 +33,9 @@ body.lock {
 
 a {
   display: block;
-  text-decoration: none;
-  color: rgb(107, 123, 88);
+  /* text-decoration: none; */
+  /* color: rgb(107, 123, 88); */
+  color: rgb(58, 73, 125);
 }
 
 h2 {
@@ -339,10 +340,15 @@ button {
   list-style-type: disc;
 }
 
+.schedule span {
+  display: block;
+  font-size: 20px;
+}
+
 .map-link {
   position: relative;
   padding: 0 20px 10px;
-  color: black;
+  /* color: black; */
 }
 
 .map-link:before {
