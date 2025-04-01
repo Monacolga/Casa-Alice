@@ -111,13 +111,13 @@ button {
   min-width: auto;
   background-color: rgb(107, 123, 88);
   transform: translateX(100%);
-  transition: 0.5s all;
+  transition: 0.3s all;
   z-index: 4;
 }
 
 .nav.active {
   transform: translateX(0);
-  transition: 0.5s all linear;
+  transition: 0.3s all linear;
 }
 
 .nav-list {
@@ -176,18 +176,18 @@ button {
   height: 30px;
   margin: 0 20px;
   cursor: pointer;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 .header-burger:before {
   top: -2px;
   right: 0;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .header-burger:after {
   bottom: 0;
   right: 0;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .burger-line {
@@ -253,13 +253,14 @@ button {
   border: 2px solid #b49e60;
   border-radius: 50px;
   background-color: #ead9ad;
+  color: rgb(107, 123, 88);
   width: 80px;
   height: 35px;
   cursor: pointer;
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
@@ -267,17 +268,20 @@ button {
   width: 80%;
   height: 80%;
   margin: auto;
+  padding: 30px;
   border: 1px solid black;
   border-radius: 30px;
-  background-color: rgb(236, 241, 228);
+  background-color: #f5efe0;
   z-index: 5;
 }
 
-.price-modal {
+.price-modal,
+.bus-modal {
   display: none;
 }
 
-.price-modal p {
+.price-modal p,
+.bus-modal p {
   padding-top: 20px;
 }
 
@@ -350,6 +354,22 @@ button {
   top: 3px;
   left: 0;
   background: url(./logo/loc.svg) no-repeat center / cover;
+}
+
+/* .bus-modal {
+  display: none;
+} */
+
+.bus-modal.active {
+  display: block;
+}
+
+.title-line {
+  display: block;
+  width: 50px;
+  height: 1px;
+  margin: 0 auto 15px;
+  background: #0c0c0e;
 }
 
 .footer-wrapper {
