@@ -220,7 +220,7 @@ button {
 
 .home-section,
 .move-section {
-  background: rgb(228, 232, 222);
+  background: rgb(236, 241, 228);
 }
 
 .container {
@@ -258,11 +258,47 @@ button {
   cursor: pointer;
 }
 
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: rgb(236, 241, 228);
+  z-index: 5;
+}
+
+.price-modal {
+  display: none;
+}
+
+.price-modal p {
+  padding-top: 20px;
+}
+
+.price-modal.active {
+  display: block;
+}
+
+.close-btn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
 .phone-emer:before {
   background: url(./logo/phone.svg) no-repeat center / cover;
 }
 
-.contact {
+.contact,
+.melanina {
   display: inline;
 }
 
