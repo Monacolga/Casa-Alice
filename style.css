@@ -162,7 +162,6 @@ button {
 .header-burger:before {
   position: absolute;
   display: inline-block;
-  /* display: none; */
   content: "";
   width: 100%;
   height: 2px;
