@@ -320,6 +320,10 @@ button {
   font-size: 21px;
 }
 
+.bus-text {
+  font-size: 16px;
+}
+
 .garbage-list,
 .shops-text,
 .bus-text,
