@@ -374,3 +374,9 @@ button {
   color: #ead9ad;
   background-color: rgb(107, 123, 88);
 }
+
+.fghj {
+  width: 300px;
+  gap: 5px;
+  justify-content: end;
+}
