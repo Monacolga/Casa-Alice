@@ -87,6 +87,7 @@ button {
 }
 
 .button-back {
+  position: relative;
   width: 50px;
   height: 50px;
   border: 2px solid black;
@@ -95,6 +96,28 @@ button {
   bottom: 30px;
   right: 30px;
   z-index: 4;
+}
+
+.arrow,
+.arrow:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgb(72, 72, 72);
+}
+
+.arrow {
+  top: 20px;
+  left: 10px;
+  transform: rotate(-55deg) translate(-2px, -50%);
+}
+
+.arrow:after {
+  top: 10px;
+  left: 4px;
+  transform: rotate(110deg) translate(-2px, -80%);
 }
 
 .header-wrapper {
