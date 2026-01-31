@@ -9,6 +9,7 @@ const priceModal = document.querySelector(".price-modal");
 const closeBtns = document.querySelectorAll(".close-btn");
 const busTitles = document.querySelectorAll(".bus-title");
 const busModals = document.querySelectorAll(".bus-modal");
+const buttonBack = document.querySelector(".button-back");
 
 function bodyLock() {
   for (const el of modal) {
@@ -60,5 +61,12 @@ busTitles.forEach((title) => {
       nextElement.classList.add("active");
       bodyLock();
     }
+  });
+});
+
+buttonBack.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
 });
