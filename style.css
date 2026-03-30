@@ -230,6 +230,14 @@ button {
   display: none;
 }
 
+.menu{
+  color: #ead9ad;
+}
+
+.menu.active{
+  display: none;
+}
+
 .header-burger.active:before {
   top: 20px;
   transform: rotate(45deg) translate(-2px, -50%);

@@ -2,6 +2,7 @@ const body = document.body;
 const header = document.querySelector(".header-wrapper");
 const burger = document.querySelector(".header-burger");
 const burgerMenu = document.querySelector(".nav");
+const menuButton = document.querySelector(".menu");
 const menuLink = document.querySelectorAll(".nav-link");
 const modal = document.querySelectorAll(".modal");
 const priceBtn = document.querySelector(".price-btn");
@@ -39,6 +40,7 @@ function closeMenu() {
 burger.addEventListener("click", () => {
   burgerMenu.classList.toggle("active");
   burger.classList.toggle("active");
+  menuButton.classList.toggle("active");
   bodyLock();
 });
 
